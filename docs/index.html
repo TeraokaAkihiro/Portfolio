@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="寺岡 明弘(@TeraokaAkihiro)のポートフォリオサイト">
+    <meta name="keywords" content="寺岡 明弘,TeraokaAkihiro,ポートフォリオ,Portfolio">
+    <meta name="author" content="Teraoka Akihiro">
+
+    <title>Teraoka Akihiro's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        var h = $(window).height();
+
+        $('#wrap').css('display','none');
+        $('#loader-bg ,#loader').height(h).css('display','block');
+      });
+
+      $(window).load(function () { //全ての読み込みが完了したら実行
+        visible();
+      });
+
+      //10秒たったら強制的にロード画面を非表示
+      $(function(){
+        setTimeout('stopload()',10000);
+      });
+
+      function visible(){
+        $('#loader-bg').delay(900).fadeOut(800);
+        $('#loader').delay(600).fadeOut(300);
+        $('#wrap').css('display','block');
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- loading -->
+    <div id="loader-bg">
+      <div id="loader">
+        <p>Now Loading...</p>
+      </div>
+    </div>
+    <!-- loading after start -->
+    <div id="wrap">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Teraoka Akihiro's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Contents
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Unity
+      </h1>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="http://akeyunitydev.hatenablog.jp/entry/2018/04/22/202856"><img class="card-img-top" src="./image/handspinner017_screenshot.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="http://akeyunitydev.hatenablog.jp/entry/2016/07/03/094334">Unityでハンドスピナー回すだけのアプリを作ってみた</a>
+              </h4>
+              <p class="card-text">UnityでハンドスピナーのAndroidアプリを作って公開した。<a href="https://play.google.com/store/apps/details?id=com.teraokaakihiro.handspinner">ハンドスピナー - Google Play のアプリ</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="http://akeyunitydev.hatenablog.jp/entry/2016/07/03/094334"><img class="card-img-top" src="./image/unity-intensive-line.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="http://akeyunitydev.hatenablog.jp/entry/2016/07/03/094334">集中線のエフェクト</a>
+              </h4>
+              <p class="card-text">UnityのParticle systemを使って集中線を表示する。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <h1 class="my-4">Contacts
+      </h1>
+        <p>Github <a href="https://github.com/TeraokaAkihiro">Teraoka Akihiro</a></p>
+        <p>Twitter <a href="https://twitter.com/teraokaakihiro">@teraokaakihiro</a></p>
+        <p>Qiita <a href="https://qiita.com/teraokaakihiro">@teraokaakihiro</a></p>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Teraoka Akihiro 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    </div>
+    <!-- loading after end -->
+  </body>
+
+</html>
