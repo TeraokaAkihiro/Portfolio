@@ -21,3 +21,10 @@
   color: #000;
   z-index: 2;
 }
+.fab {
+  min-width: 20px;
+}
+.contact-text {
+  display: inline-block;
+  min-width: 80px;
+}
